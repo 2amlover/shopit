@@ -1,10 +1,10 @@
-#E-Commerce-Frontend
+# Shopit E-Commerce-Frontend
 
-MERN-E-Commerce-Frontend is the frontend of an e-commerce web application built with ReactJS ,Material UI, ContextAPI, React-router-dom
+Shopit E-Commerce-Frontend is the frontend of an e-commerce web application built with ReactJS ,Material UI, ContextAPI, React-router-dom
 
 ## Live Link
 
-You can access the live application at [https://e-shopit.vercel.app/](https://e-shopit.vercel.app/).
+You can access the live application at 
 
 ## Features
 
