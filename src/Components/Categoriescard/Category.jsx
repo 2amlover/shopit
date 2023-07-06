@@ -7,7 +7,6 @@ import DressesImage from '../../Assets/Images/Dresses.jpg';
 const Category = () => {
   return (
     <div className="category-Heading">
-    
       <div className="category-container">
         <div className="category-row">
           <div className="category-column">
