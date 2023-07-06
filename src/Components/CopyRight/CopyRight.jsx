@@ -8,7 +8,6 @@ const CopyRight = (props) => {
 
             <Typography variant="body1" fontWeight="bold" color="text.secondary" align="center" {...props} style={{ color: '#1976d2',  }}>
                 {'2023 '}
-               
                 {' © '}
                 Developed By 2amlover
             </Typography>
