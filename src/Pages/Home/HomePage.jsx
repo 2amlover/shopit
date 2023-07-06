@@ -22,7 +22,7 @@ const HomePage = () => {
                    
                 </Container>
             </Container >
-            <CopyRight sx={{ mt: 80, mb: 10 }} />
+            <CopyRight sx={{ mt: 5, mb: 10 }} />
         </ >
     )
 }
