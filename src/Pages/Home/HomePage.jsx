@@ -16,7 +16,7 @@ const HomePage = () => {
                 <Container style={{ marginTop: 90, display: "flex", justifyContent: 'center' }}>
                  <SearchBar/>
                 </Container>
-                <Typography variant='h3' sx={{ textAlign: 'center', marginTop: 10, color: '#1976d2', fontWeight: 'bold' }}>Categories</Typography>
+                {/* <Typography variant='h3' sx={{ textAlign: 'center', marginTop: 10, color: '#1976d2', fontWeight: 'bold' }}>Categories</Typography> */}
                 <Category />
                 <Container maxWidth='xl' style={{ marginTop: 90, display: "flex", justifyContent: 'center', flexGrow: 1, flexWrap: 'wrap', gap: 20, }}>
                 </Container>

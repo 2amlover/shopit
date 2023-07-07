@@ -12,7 +12,7 @@ const DesktopNavigation = () => {
       <nav className='nav'>
         <div className="logo">
           <Link to='/'>
-            <span >MS1620</span>
+            <span >TOPSHOP</span>
             {/* <img src={LOGO} alt="1" /> */}
           </Link>
         </div>

@@ -3,21 +3,27 @@ import './category.css';
 import BookImage from '../../Assets/Images/Book.jpg';
 import AccessoriesImage from '../../Assets/Images/Accessories.jpg';
 import DressesImage from '../../Assets/Images/Dresses.jpg';
+import { useNavigate } from "react-router-dom";
+import { FemaleCloth, GroupCloth } from '../../Assets/Images/Image';
 
-const Category = () => {
+
+  
+  function Category  ()  {
+    const navigate = useNavigate();
   return (
     <div className="category-Heading">
+       <h2 className="category-heading">Categories</h2>
       <div className="category-container">
         <div className="category-row">
           <div className="category-column">
             <div className="category-card">
-              <img src={BookImage} alt="Category 1" />
+              <img src={GroupCloth} alt="Category 1"  onClick={() => navigate("/summerwear")}/>
               <h3>Summer Wear</h3>
             </div>
           </div>
           <div className="category-column">
             <div className="category-card">
-              <img src={BookImage} alt="Category 2" />
+              <img src={FemaleCloth} alt="Category 2" />
               <h3>Casual Wear</h3>
             </div>
           </div>

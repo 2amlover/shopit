@@ -8,6 +8,7 @@ import DesktopNavigation from './Navigation/DesktopNavigation';
 import Wishlist from './Pages/WhisList/Wishlist';
 import { Flip, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Summerwear from './Pages/SummerWear/Summerwear';
 
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/login" element={< Login />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/wishlist' element={<Wishlist />} />
+            <Route path='/summerwear' element={<Summerwear />} />
           </Routes>
         </div>
         <MobileNavigation />
