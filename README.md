@@ -4,7 +4,7 @@ Shopit E-Commerce-Frontend is the frontend of an e-commerce web application buil
 
 ## Live Link
 
-You can access the live application at https://shophere-2amlover.vercel.app/
+You can access the live application at https://shopit-moni575.vercel.app/
 
 
 
