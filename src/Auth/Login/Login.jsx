@@ -5,6 +5,7 @@ import CopyRight from '../../Components/CopyRight/CopyRight';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const Login = () => {
   const [activeForm, setActiveForm] = useState('signin');
   const [signInData, setSignInData] = useState({
@@ -84,7 +85,7 @@ const Login = () => {
             <button type="submit">Sign In</button>
             <div className="form-footer">
               <div className="forgot-password">
-                <a href="">Forgot Password</a>
+                <a href="forgotpassward">Forgot Password</a>
               </div>
               <p className="flip-button" onClick={handleFlip}>
                 Sign Up

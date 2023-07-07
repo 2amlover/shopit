@@ -9,6 +9,9 @@ import Wishlist from './Pages/WhisList/Wishlist';
 import { Flip, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Summerwear from './Pages/SummerWear/Summerwear';
+import Forgotpassward from './Auth/ForgotPassword/Forgotpassward';
+
+
 
 
 
@@ -26,12 +29,11 @@ function App() {
             <Route path='/cart' element={<Cart />} />
             <Route path='/wishlist' element={<Wishlist />} />
             <Route path='/summerwear' element={<Summerwear />} />
+            <Route path='/forgotpassward' element={<Forgotpassward />} />
           </Routes>
         </div>
         <MobileNavigation />
       </Router >
-
-
     </>
   );
 }
