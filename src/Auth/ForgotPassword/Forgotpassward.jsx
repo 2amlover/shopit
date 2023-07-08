@@ -27,6 +27,12 @@ const ForgotPassword = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
           <button type="forgot">Submit</button>
+          <div className="form-footer">
+            <div className="forgot-password">
+              <a href="/login">Go back to Sign In</a>
+            </div>
+            <p className="flip-button">Sign Up</p>
+          </div>
         </form>
       </div>
       <CopyRight sx={{ mt: 8, mb: 10 }} />
