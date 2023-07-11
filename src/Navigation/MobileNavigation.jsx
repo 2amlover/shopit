@@ -1,12 +1,12 @@
 import './Mobile.css'
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
-import { AiOutlineHome, AiOutlineHeart, AiOutlineShoppingCart, AiFillMail, AiFillCloseCircle } from 'react-icons/ai'
+import { AiOutlineHome, AiOutlineHeart, AiOutlineShoppingCart, AiFillCloseCircle } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
-import { FiLogOut } from 'react-icons/fi'
+import { CgLogOut } from 'react-icons/cg'
 import React, {  useContext, useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
-import { Badge, Button, Dialog, DialogActions, DialogContent, Slide, Typography } from '@mui/material';
+import { Badge, Button, Dialog, DialogActions, DialogContent, Typography } from '@mui/material';
 import { ContextFunction } from '../Context/Context';
 import { toast } from 'react-toastify';
 import { Transition, getCart, getWishList, handleClickOpen, handleClose, handleLogOut } from '../Constants/Constant';
@@ -61,7 +61,7 @@ const MobileNavigation = () => {
                                 </div>
                             </NavLink>
                             <div className='links' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => handleClickOpen(setOpenAlert)}>
-                                <FiLogOut style={{ fontSize: 23, }} />
+                                <CgLogOut style={{ fontSize: 23, }} />
 
                             </div>
                         </>
@@ -85,7 +85,7 @@ const MobileNavigation = () => {
                     <Typography variant='h6'>  Do You Want To Logout?</Typography>
                 </DialogContent>
                 <DialogActions sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
-                    <Button variant='contained' endIcon={<FiLogOut />} color='primary' onClick={() => handleLogOut(setProceed, toast, navigate, setOpenAlert)}>Logout</Button>
+                    <Button variant='contained' endIcon={<CgLogOut />} color='primary' onClick={() => handleLogOut(setProceed, toast, navigate, setOpenAlert)}>Logout</Button>
                     <Button variant='contained' color='error' endIcon={<AiFillCloseCircle />} onClick={()=>handleClose(setOpenAlert)}>Close</Button>
                 </DialogActions>
             </Dialog>

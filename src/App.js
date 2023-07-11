@@ -13,10 +13,6 @@ import Forgotpassward from './Auth/ForgotPassword/Forgotpassward';
 
 
 
-
-
-
-
 function App() {
   return (
     <>
@@ -32,7 +28,6 @@ function App() {
             <Route path='/wishlist' element={<Wishlist />} />
             <Route path='/summerwear' element={<Summerwear />} />
             <Route path='/forgotpassward' element={<Forgotpassward />} />
-           
           </Routes>
         </div>
         <MobileNavigation />
