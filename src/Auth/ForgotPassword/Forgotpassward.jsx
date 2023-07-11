@@ -31,7 +31,6 @@ const ForgotPassword = () => {
             <div className="forgot-password">
               <a href="/login">Go back to Sign In</a>
             </div>
-            <p className="flip-button">Sign Up</p>
           </div>
         </form>
       </div>
