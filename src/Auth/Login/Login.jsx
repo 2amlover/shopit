@@ -4,7 +4,7 @@ import { HiLockClosed } from 'react-icons/hi';
 import CopyRight from '../../Components/CopyRight/CopyRight';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import DesktopNavigation from '../../Navigation/DesktopNavigation';
 
 const Login = () => {
   const [activeForm, setActiveForm] = useState('signin');
@@ -17,6 +17,7 @@ const Login = () => {
     email: '',
     password: ''
   });
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // New state for login status
 
   const handleSignInChange = (e) => {
     const { name, value } = e.target;
@@ -34,6 +35,7 @@ const Login = () => {
       // Perform sign in logic
       // Replace the console.log with your actual sign in implementation
       toast.success('Sign In successful', { toastId: 'signin-toast' });
+      setIsLoggedIn(true); // Update the login status to true
     } else {
       toast.error('Please enter username and password');
     }
@@ -49,6 +51,7 @@ const Login = () => {
       // Perform sign up logic
       // Replace the console.log with your actual sign up implementation
       toast.success('Sign Up successful', { toastId: 'signup-toast' });
+      setActiveForm('signin'); // Reset the active form to 'signin'
     } else {
       toast.error('Please fill all the fields');
     }
@@ -85,7 +88,7 @@ const Login = () => {
             <button type="submit">Sign In</button>
             <div className="form-footer">
               <div className="forgot-password">
-                <a href="forgotpassward">Forgot Password</a>
+                <a href="forgotpassword">Forgot Password</a>
               </div>
               <p className="flip-button" onClick={handleFlip}>
                 Sign Up
@@ -96,7 +99,7 @@ const Login = () => {
       )}
       {activeForm === 'signup' && (
         <div className="signup">
-           <div className="lock-icon">
+          <div className="lock-icon">
             <HiLockClosed />
           </div>
           <h2>Sign Up</h2>
@@ -124,12 +127,13 @@ const Login = () => {
               onChange={handleSignUpChange}
             />
             <button type="submit">Sign Up</button>
-              <p className="flip-button" onClick={handleFlip}>
-                Sign In
-              </p>
+            <p className="flip-button" onClick={handleFlip}>
+              Sign In
+            </p>
           </form>
         </div>
       )}
+      <DesktopNavigation isLoggedIn={isLoggedIn} />
       <CopyRight sx={{ mt: 1, mb: 4 }} />
     </div>
   );

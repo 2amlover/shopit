@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './forgotpassword.css';
 import { HiLockClosed } from 'react-icons/hi';
 import CopyRight from '../../Components/CopyRight/CopyRight';
@@ -8,8 +10,14 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform the logic to handle the submitted email
-    console.log(email);
+    if (email.trim() !== '') {
+      // Perform the logic to handle the submitted email
+      // Replace the console.log with your actual implementation
+      console.log(email);
+      // toast.success('Email submitted successfully', { toastId: 'email-toast' });
+    } else {
+      toast.error('Please enter your email');
+    }
   };
 
   return (
