@@ -103,17 +103,17 @@ const Login = () => {
           <form onSubmit={handleSignUpSubmit}>
             {/* Sign-up form fields */}
             <input
-              type="text"
-              placeholder="Full Name"
-              name="fullName"
-              value={signUpData.fullName}
-              onChange={handleSignUpChange}
-            />
-            <input
               type="email"
               placeholder="Email"
               name="email"
               value={signUpData.email}
+              onChange={handleSignUpChange}
+            />
+            <input
+              type="username"
+              placeholder="Username"
+              name="username"
+              value={signUpData.username}
               onChange={handleSignUpChange}
             />
             <input

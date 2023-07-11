@@ -1,21 +1,23 @@
 import './Desktop.css'
+
 import React from 'react'
 import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 import { Link, NavLink } from 'react-router-dom';
 import { Badge,Tooltip } from '@mui/material';
-/*import LOGO from '../../Assets/Images/E-logo.png';*/
+import ELogo from '../Assets/Images/logo4.png';
+
 
 const DesktopNavigation = () => {
   return (
     <>
       <nav className='nav'>
         <div className="logo">
-          <Link to='/'>
-            <span >TOPSHOP</span>
-            {/* <img src={LOGO} alt="1" /> */}
-          </Link>
+           <Link to='/'>
+           <img src={ELogo} alt="E Logo" style={{ width: '200px', height: 'auto' }}/>
+           </Link>
         </div>
+            {/* <span  class="text-gradient" >TOPSHOP</span> */}
         <div className="nav-items">
           <ul className="nav-items">
             <li className="nav-links">

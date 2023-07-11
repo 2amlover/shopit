@@ -34,7 +34,7 @@ const ForgotPassword = () => {
           </div>
         </form>
       </div>
-      <CopyRight sx={{ mt: 8, mb: 10 }} />
+      <CopyRight sx={{ mt: 2, mb: 10 }} />
     </div>
   );
 };
