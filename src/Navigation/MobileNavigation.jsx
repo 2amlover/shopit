@@ -2,8 +2,7 @@ import './Mobile.css'
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import { AiOutlineHome, AiOutlineHeart, AiOutlineShoppingCart, AiFillCloseCircle } from 'react-icons/ai'
-import { CgProfile } from 'react-icons/cg'
-import { CgLogOut } from 'react-icons/cg'
+import { CgProfile,CgLogOut } from 'react-icons/cg'
 import React, {  useContext, useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Badge, Button, Dialog, DialogActions, DialogContent, Typography } from '@mui/material';

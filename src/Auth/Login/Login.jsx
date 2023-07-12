@@ -88,7 +88,7 @@ const Login = () => {
             <button type="submit">Sign In</button>
             <div className="form-footer">
               <div className="forgot-password">
-                <a href="forgotpassword">Forgot Password</a>
+                <a href="forgotpassward">Forgot Password</a>
               </div>
               <p className="flip-button" onClick={handleFlip}>
                 Sign Up
